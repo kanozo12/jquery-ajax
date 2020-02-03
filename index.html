@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/app.css">
+    <script src="/js/jquery-3.4.1.min.js"></script>
+    <script src="/js/CardApp.js"></script>
+    <script src="/js/app.js"></script>
+</head>
+<body>
+    <div class="search-row">
+        <select id="searchOpt">
+            <option value="name">이름</option>
+            <option value="price">가격</option>
+        </select>
+        
+        <input type="text" id="word">
+        <button id="btnSearch">검색</button>
+    </div>
+
+
+    <h2>카드 리스트</h2>
+
+    <div class="container">
+        <div class="card-list">
+            
+        </div>
+    </div>
+</body>
+</html>
+
+<!-- 
+
+    숙제
+    select 박스에 있는 값에 따라 검색결과가 다르게 하시오
+    이름일 경우에는 이름에 해당하는 단어가 있는경우
+    가격일 경우는 해당 가격 이하의 아이템이 검색되도록 (가격 하이라이트)
+    데이터의 개수를 10개 이상으로 늘릴 것
+ -->

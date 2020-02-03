@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .hl {
+            background-color: rgba(181, 240, 105, 0.5);
+        }
+    </style>
+</head>
+<body>
+    <h1>안녕하세요</h1>
+    <script>
+        let str = "하세";
+        let regex = new RegExp(str,"gi");
+        
+        let content = document.querySelector("h1").innerHTML;
+        content = content.replace(regex, `<span class="hl">$&</span>`);
+        document.querySelector("h1").innerHTML = content;
+    </script>
+</body>
+</html>
