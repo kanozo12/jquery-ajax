@@ -9,6 +9,14 @@
     margin:0 auto;
 }
 
+.search-row {
+    width:100%;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    height:80px;
+    margin-bottom:20px;
+}
+
 .card-list {
     display: grid;
     width:100%;
@@ -22,14 +30,9 @@
     border-radius: 8px;
     box-shadow: 0 0 20px rgba(0,0,0,0.2);
     transform: scale(0);
-    transform-origin:  center top;
-    transition:  0.5s;
+    transform-origin: center top;
+    transition: all 0.5s;
 }
-
-.c {
-    background-color: rgba(181, 240, 105, 0.5);
-}
-
 .card.active {
     transform: scale(1);
 }
@@ -45,15 +48,35 @@
 }
 
 .card .info {
-    padding: 12px;
+    padding:12px;
     line-height: 1.5;
 }
 
-.search-row {
-    width: 100%;
-    background-color: #fff;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
-    height: 80px;
-    margin-bottom: 20px;
+
+
+.hl {
+    background-color: rgba(181, 240, 105, 0.5);
 }
 
+.slider {
+    -webkit-appearance: none;
+    width: 400px;
+    height:10px;
+    background-color: #c9c7c6;
+    outline:none;
+    opacity: 0.7;
+    transition: opacity 0.2s;
+}
+
+.slider:hover {
+    opacity: 1;
+}
+
+.slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    width:20px;
+    height:20px;
+    border-radius:50%;
+    background-color: #4caf50;
+    cursor: pointer;
+}

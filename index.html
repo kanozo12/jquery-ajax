@@ -16,26 +16,27 @@
             <option value="name">이름</option>
             <option value="price">가격</option>
         </select>
-        
+
         <input type="text" id="word">
         <button id="btnSearch">검색</button>
+        <input type="range" class="slider" min="1" max="100">
+
+        <button id="register">등록</button>
+        <button id="sortData">정렬</button>
     </div>
 
-
-    <h2>카드 리스트</h2>
-
     <div class="container">
+        <h2>카드 리스트</h2>
         <div class="card-list">
             
         </div>
     </div>
+
+    <div class="register">
+        이름 : <input type="text" id="name"><br>
+        가격 : <input type="number" id="price"><br>
+        방문자 : <input type="result" id="result">
+        <button id="registerOK">등록</button>
+    </div>
 </body>
 </html>
-
-<!-- 
-    숙제
-    select 박스에 있는 값에 따라 검색결과가 다르게 하시오
-    이름일 경우에는 이름에 해당하는 단어가 있는경우
-    가격일 경우는 해당 가격 이하의 아이템이 검색되도록 (가격 하이라이트)
-    데이터의 개수를 10개 이상으로 늘릴 것
- -->

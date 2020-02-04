@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="/js/jquery-3.4.1.min.js"></script>
+    <style>
+        .list {
+            border:1px solid #ddd;
+            width:400px;
+            height:300px;
+        }
+    </style>
+</head>
+<body>
+    <div class="list">
+        <button class="alert">경고</button>
+    </div>
+    <button id="add">추가</button>
+    <script>
+        let list = $(".list");
+        $(document).on("click", ".alert", function(e){
+            console.log(e);
+            // console.log(e.originalEvent.target);
+            // console.log(e.originalEvent.currentTarget);
+        });
+        document.addEventListener("click", (e)=>{
+            console.log(e);
+            // console.log(e.target);
+            // console.log(e.currentTarget);
+        });
+
+        $("#add").on("click", () => {
+            list.append(`<button class="alert">경고</button>`);
+        });
+
+        // $(".list").on("click", ()=>{
+        //     console.log("리스트");
+        // });
+
+        // $("body").on("click", (e)=>{
+        //     e.stopPropagation();
+        //     console.log("바디");
+        // });
+
+        // $("html").on("click", ()=>{
+        //     console.log("html");
+        // });
+    </script>
+</body>
+</html>
