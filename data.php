@@ -5,26 +5,58 @@ $data = [
     [
         'image'=> 'busan.jpg',
         'name'=>'부산',
-        'price' => 12000,
-        'result' => 8245
+        'price' => 11111,
+        'result' => 1234
     ],
     [
-        'image'=> 'damyang.jpg',
-        'name'=>'담양',
-        'price' => 12000,
-        'result' => 8245
+        'image'=> 'busan.jpg',
+        'name'=>'부산',
+        'price' => 22222,
+        'result' => 1234
     ],
     [
-        'image'=> 'jeju.jpg',
-        'name'=>'제주',
-        'price' => 12000,
-        'result' => 8245
+        'image'=> 'busan.jpg',
+        'name'=>'부산',
+        'price' => 33333,
+        'result' => 1234
     ],
     [
-        'image'=> 'kwangwha.jpg',
-        'name'=>'광화',
-        'price' => 12000,
-        'result' => 8245
+        'image'=> 'busan.jpg',
+        'name'=>'부산',
+        'price' => 44444,
+        'result' => 1234
     ],
+    [
+        'image'=> 'busan.jpg',
+        'name'=>'부산',
+        'price' => 55555,
+        'result' => 1234
+    ],
+    [
+        'image'=> 'busan.jpg',
+        'name'=>'부산',
+        'price' => 66666,
+        'result' => 1234
+    ],
+    [
+        'image'=> 'busan.jpg',
+        'name'=>'부산',
+        'price' => 77777,
+        'result' => 1234
+    ],
+    [
+        'image'=> 'busan.jpg',
+        'name'=>'부산',
+        'price' => 88888,
+        'result' => 1234
+    ],
+    [
+        'image'=> 'busan.jpg',
+        'name'=>'부산',
+        'price' => 99999,
+        'result' => 1234
+    ],
+   
 ];
+
 echo json_encode($data);

@@ -1,4 +1,4 @@
-$(function () {
+$(function(){
     let ca = new CardApp();
 });
 

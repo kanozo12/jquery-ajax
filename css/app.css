@@ -9,18 +9,6 @@
     margin:0 auto;
 }
 
-.search-row {
-    width:100%;
-    background-color: #fff;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
-    height:80px;
-    margin-bottom:20px;
-}
-
-.c {
-    background-color: rgba(181, 240, 105, 0.5);
-}
-
 .card-list {
     display: grid;
     width:100%;
@@ -34,9 +22,14 @@
     border-radius: 8px;
     box-shadow: 0 0 20px rgba(0,0,0,0.2);
     transform: scale(0);
-    transform-origin: center top;
-    transition: all 0.5s;
+    transform-origin:  center top;
+    transition:  0.5s;
 }
+
+.c {
+    background-color: rgba(181, 240, 105, 0.5);
+}
+
 .card.active {
     transform: scale(1);
 }
@@ -52,6 +45,15 @@
 }
 
 .card .info {
-    padding:12px;
+    padding: 12px;
     line-height: 1.5;
 }
+
+.search-row {
+    width: 100%;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    height: 80px;
+    margin-bottom: 20px;
+}
+
